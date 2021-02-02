@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/iconmonstr-pencil-9-16.png" />
+    <link rel="stylesheet" href="form.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+
+
+    <div id="survey">
+        <h1 id="title">SURVEY FORM</h1>
+        <h3 id="discription">Please Take from your time and fill in the details bellow</h3>
+        <form id="survey-form">
+
+            <div class="form-wrapper">
+                <div class="marg">
+                    <label for="name" id="name-label">Name</label><br />
+                    <input type="text" placeholder="enter your name" id="name" required><br />
+                </div>
+                <div class="wrapp">
+                    <label id="email-label">Email</label><br />
+                    <input type="email" placeholder="enter your Email" id="email" required><br />
+                </div>
+                <div class="wrapp">
+                    <label id="number-label">Age</label><br />
+                    <input type="number" min="18" max="45" placeholder="Your age shouldn't surpass 45yo" id="number" required><br />
+                </div>
+                <div class="wrapp">
+                    <label id="dropdown-label">Occupation</label><br />
+                    <select id="dropdown">
+                        <option value="">Student</option>
+                        <option value="">Full time worker</option>
+                        <option value="">Part time worker</option>
+                        <option value="">Unemployed</option>
+
+                    </select><br />
+                </div>
+                <div class="wrapp">
+                   <label id="select-label">Are you?</label><br />
+                        <label>
+                </div>
+                <div class="select">
+                    <input type="checkbox" id="first-check" name="1" value="web">WEB dev<br />
+                    </label>
+                    <label>
+                        <input type="checkbox" id="second-check" name="2" value="mobile"> Mobile dev?<br />
+                        <label>
+                            <input type="checkbox" id="third-check" name="3" value="desktop" >Desktop dev? <br>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="forth-check" name="4" value="other" >Other?
+                        </label>
+                </div>
+        
+                <div class="wrapp">
+                    <label id="select-label">Gender</label>
+                    <label>
+            </div>
+            <div class="select">
+                <input type="radio" id="first-check" name="GENDER" value="male">Male<br />
+                </label>
+                <label>
+                    <input type="radio" id="second-check" name="GENDER" value="female"> Female
+
+            </div>
+        
+
+            <div class="wrapp">
+                <label id="feed-label">Your goals as a tech guy?</label><br />
+            </div>
+            <div class="select">
+              <textarea class="text-area" name="goals" cols="30" rows="10"></textarea>
+            </div>
+            <div class="sub">
+            <button type="submit"  id="submit">Submit</button></div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
